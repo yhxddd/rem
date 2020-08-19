@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+        /* 媒体查询 （Media Query）
+                 @media可以针对不同的屏幕尺寸设置不同的样式
+         */
+        /*声明媒体查询： @media mediatype and|not|only (media feature){ css-code;}
+            mediatype 媒体类型： all 所有设备 print打印机 screen电脑屏幕、平板、智能手机
+            and|not|only 关键字： 将媒体类型或多个媒体特性连接到一起作为媒体查询的条件
+                            and:多个媒体特性连接到一起 “且”   not：排除某个媒体类型 “非”  only：指定某个特定的媒体类型
+            media feature媒体特性：每种媒体类型都有各自不同的特性 可设置不同的展示风格  均需要小括号包含
+                        width:输出设备中页面可见区域的宽度 min-width：最小可见区域 max-width：最大可见区域宽度
+        */
+
+        /* 在屏幕上 宽度<=800时改变背景颜色  大于800背景恢复为白色*/
+        @media screen and (max-width: 800px){
+            body{
+                background-color: lightskyblue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+</body>
+</html>

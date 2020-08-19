@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例 改变不同背景色</title>
+    <style>
+        /* 媒体查询一般按照从大到小 或 从小到大的顺序 写*/
+        /* <540px */
+        @media screen and (max-width: 539px){
+            body {
+                background-color: palegreen;
+            }
+        }
+        /* 540px~970px*/
+        /*
+        @media screen and (min-width: 540px) and (max-width: 969px){
+            body{
+                background-color: blueviolet;
+            }
+        }*/
+        /* 不用写<970px  因为 后面的属性 会 覆盖 前面的冲突的部分*/
+        @media screen and (min-width: 540px){
+            body{
+                background-color: blueviolet;
+            }
+        }
+        /* >970px */
+        @media screen and (min-width: 970px){
+            body{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>

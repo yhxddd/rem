@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rem基础</title>
+    <style>
+        /* rem 是相对于 html元素的字体大小来说 */
+        html{
+            font-size: 14px;
+        }
+        /* em 是相对于父元素的 字体大小 */
+        div{
+            font-size: 12px;
+        }
+        p{
+            /* 因为父元素有 字体大小设置了 则此时可以使用em*/
+           /* width: 10em;
+            height: 10em; /*相当于 10*12px  此时p为120*120的盒子*/
+            background-color: lightskyblue;
+            width: 10rem;/* 相当于 10*14 此时p为140*140*/
+            height: 10rem;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/*less的嵌套
+  1. 后代选择器 ：子元素写在父元素里面
+  2. 如果碰到伪类元素选择器、伪类、交集选择器： 若直接在下面写会解析为某个子元素的伪类元素
+        此时需为内层选择器前加&符号， 有&符号 就解析为父元素自身或父元素的伪类
+        如果没有& 被解析为父选择器的后代
+*/
+
+.header{
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  a {
+    color:white;
+    /* 伪类元素 要在内层选择器前加&*/
+    &:hover {
+      color:blue;
+    }
+  }
+}
+
+.nav{
+  .logo{
+    color: green;
+  }
+  &::before {
+    content: "";
+  }
+}
